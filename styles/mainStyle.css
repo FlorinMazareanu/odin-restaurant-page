@@ -1,0 +1,52 @@
+:root {
+    --mainBgColor: wheat;
+    --navbarHeight: 10vh;
+    --navbarGbColor: green;
+    --navbarFontColor: red;
+    --navbarLiFontColor: navy;
+    --navbarLiPadding: 2rem;
+    --navItemsMarginLeftRight: 10rem;
+    --contentHeight: calc(100vh - var(--navbarHeight));
+    --contentBgColor: azure;
+    --mainFontColor: black;  
+}
+body {
+    background-color: var(--mainBgColor);
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar {
+    width: 100vw;
+    height: var(--navbarHeight);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title {
+    margin-left: var(--navItemsMarginLeftRight);
+    font-size: 3rem;
+}
+.hmc-li-container {
+    display: flex;
+    list-style-type: none;
+    margin-right: var(--navItemsMarginLeftRight);
+}
+.navbar-li {
+    padding-left: var(--navbarLiPadding);
+}
+.navbar-a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+#content {
+    width: 100vw;
+    height: var(--contentHeight);
+    background-color: var(--contentBgColor);
+}
+p {
+    color: red;
+}

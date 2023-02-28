@@ -18,17 +18,20 @@ function clearContent() {
     contentElem.innerHTML = "";
 }
 
-//generating the toggler buttons for home, main and contact
+//home is the default toggled section
+homeModule.generateHomeElements();
+
+//generating the toggler <li> for home, main and contact
 //adding event listeners to clear the elements from id="content"
 //and to generate elements
-const homeButtonElem = document.getElementById("home-button");
-homeButtonElem.addEventListener("pointerdown", () => {clearContent(); homeModule.generateHomeElements();});
+const homeLiElem = document.getElementById("home-li");
+homeLiElem.addEventListener("pointerdown", () => {clearContent(); homeModule.generateHomeElements();});
 
-const menuButtonElem = document.getElementById("menu-button");
-menuButtonElem.addEventListener("pointerdown", () => {clearContent(); menuModule.generateMenuElements();});
+const menuLiElem = document.getElementById("menu-li");
+menuLiElem.addEventListener("pointerdown", () => {clearContent(); menuModule.generateMenuElements();});
 
-const contactButtonElem = document.getElementById("contact-button");
-contactButtonElem.addEventListener("pointerdown", () => {clearContent(); contactModule.generateContactElements();});
+const contactLiElem = document.getElementById("contact-li");
+contactLiElem.addEventListener("pointerdown", () => {clearContent(); contactModule.generateContactElements();});
 
 
 
