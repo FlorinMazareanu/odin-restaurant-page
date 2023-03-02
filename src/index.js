@@ -9,7 +9,7 @@ const contactModule = require("./contact");
 
 console.log("index.js is running...");
 
-//function to delete all elements in "content"
+//function to clear all elements in "content"
 // so they can be generated again at home/menu/contact toggle
 function clearContent() {
     console.log("-------");

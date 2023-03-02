@@ -42,10 +42,16 @@ body {
     font-size: 1.2rem;
     font-weight: bolder;
 }
-#content {
+#content-contaier {
     width: 100vw;
     height: var(--contentHeight);
     background-color: var(--contentBgColor);
+}
+#content {
+    
+}
+.hidden-content {
+    visibility: hidden;
 }
 p {
     color: red;
