@@ -4,10 +4,7 @@ function generateHomeElements() {
     console.log("FFF generating home elements...");
     const contentElem = document.getElementById("content");
     contentElem.classList.remove("hidden-content");
-
-    const testElem = document.createElement("h1");
-    contentElem.appendChild(testElem);
-    testElem.textContent = "home test";
+    contentElem.classList.remove("content-background");
 }
 export {generateHomeElements};
 

@@ -1,11 +1,15 @@
 :root {
-    --navbarBgColor: rgb(42, 117, 182);
-    --navbarFontColor: red;
-    --navbarLiFontColor: navy;
-    --navbarLiPadding: 2rem;
-    --navItemsMarginLeftRight: 10rem;
-    --contentBgColor: rgb(149, 196, 196);
+    --navbarBgColor: #EDEFEE;
+    --navbarBgColorTwo: #D6E0EA;
+    --navbarFontColor: black;
+    --navbarLiFontColor: #382D29;
+    --navbarLiFontColorHover: #986A42;
+    --navbarLiPadding: 1rem;
+    --navbarBorderSize: 2px;
+    --navbarBorderColor: #8A7152;
+    --contentBgColor: #8A7152;
     --mainFontColor: black;  
+    --menuBgColor: #DBDDDC;
 }
 body {
     margin: 0px;
@@ -15,40 +19,74 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     flex-direction: column;
+    background-image: url("../assets/images/bgImg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 .navbar {
     width: 100vw;
     height: 10vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-color: var(--navbarBgColor);
+    background-image: linear-gradient(var(--navbarBgColor), var(--navbarBgColorTwo));
+    border-bottom: var(--navbarBorderSize) solid var(--navbarBorderColor);
 }
-.title {
-    margin-left: var(--navItemsMarginLeftRight);
-    font-size: 3rem;
-}
+
 .hmc-li-container {
     display: flex;
     list-style-type: none;
-    margin-right: var(--navItemsMarginLeftRight);
 }
 .navbar-li {
-    padding-left: var(--navbarLiPadding);
+    padding: var(--navbarLiPadding);
 }
 .navbar-a {
     text-decoration: none;
     font-size: 1.2rem;
-    font-weight: bolder;
+    font-weight: 500;
+    color: var(--navbarLiFontColor);
+}
+.navbar-a:hover {
+    color: var(--navbarLiFontColorHover) !important;
+    text-decoration: underline;
+    font-weight: 500;
 }
 #content {
     width: 100vw;
     height: 90vh;
-    background-color: var(--contentBgColor);
 }
 .hidden-content {
     visibility: hidden;
 }
+.content-background {
+    background-color: var(--menuBgColor);
+}
 p {
-    color: red;
+    color: black;
+}
+.menu-container {
+    width: 100vw;
+    height: 100%;
+    background-color: var(--menuBgColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu-item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--navbarLiFontColor);
+}
+.menu-item-title {
+
+}
+.menu-item-description {
+    
+}
+.menu-item-price {
+    
 }
