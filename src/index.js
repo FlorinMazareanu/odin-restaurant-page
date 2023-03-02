@@ -15,7 +15,7 @@ function clearContent() {
     console.log("-------");
     console.log("clearing the elemnts in content...");
     const contentElem = document.getElementById("content");
-    contentElem.innerHTML = "";
+    contentElem.textContent = "";
 }
 
 //home is the default toggled section

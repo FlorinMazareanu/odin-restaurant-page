@@ -1,29 +1,28 @@
 :root {
-    --mainBgColor: wheat;
-    --navbarHeight: 10vh;
-    --navbarGbColor: green;
+    --navbarBgColor: rgb(42, 117, 182);
     --navbarFontColor: red;
     --navbarLiFontColor: navy;
     --navbarLiPadding: 2rem;
     --navItemsMarginLeftRight: 10rem;
-    --contentHeight: calc(100vh - var(--navbarHeight));
-    --contentBgColor: azure;
+    --contentBgColor: rgb(149, 196, 196);
     --mainFontColor: black;  
 }
 body {
-    background-color: var(--mainBgColor);
     margin: 0px;
     padding: 0px;
     width: 100vw;
     height: 100vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 .navbar {
     width: 100vw;
-    height: var(--navbarHeight);
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--navbarBgColor);
 }
 .title {
     margin-left: var(--navItemsMarginLeftRight);
@@ -42,13 +41,10 @@ body {
     font-size: 1.2rem;
     font-weight: bolder;
 }
-#content-contaier {
-    width: 100vw;
-    height: var(--contentHeight);
-    background-color: var(--contentBgColor);
-}
 #content {
-    
+    width: 100vw;
+    height: 90vh;
+    background-color: var(--contentBgColor);
 }
 .hidden-content {
     visibility: hidden;
