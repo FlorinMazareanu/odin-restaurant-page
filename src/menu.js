@@ -18,13 +18,16 @@ function generateMenuElements() {
         menuItemContainer.id = "menu-item-" + i;
         menuItemTitle.classList.add("menu-item-title");
 
+        let menuItemDetails = document.createElement("div");
+        menuItemContainer.appendChild(menuItemDetails);
+        menuItemDetails.classList.add("menu-item-details");
 
         let menuItemDescription = document.createElement("p");
-        menuItemContainer.appendChild(menuItemDescription);
+        menuItemDetails.appendChild(menuItemDescription);
         menuItemDescription.classList.add("menu-item-description");
 
         let menuItemPrice = document.createElement("p");
-        menuItemContainer.appendChild(menuItemPrice);
+        menuItemDetails.appendChild(menuItemPrice);
         menuItemPrice.classList.add("menu-item-price");
 
         switch (i) {
@@ -45,7 +48,7 @@ function generateMenuElements() {
             case 2:
                 {
                     menuItemTitle.innerHTML = "Croissant";
-                    menuItemDescription.innerHTML = "Are you going to finish taht croissant? Of course you will";
+                    menuItemDescription.innerHTML = "Are you going to finish that croissant? Of course you will";
                     menuItemPrice.innerHTML = "15.25 $";
                 }
             break;
@@ -59,7 +62,7 @@ function generateMenuElements() {
             case 4:
                 {
                     menuItemTitle.innerHTML = "Lava cake";
-                    menuItemDescription.innerHTML = "This lava cake has extra chocolate and is guaranteed to make you come back";
+                    menuItemDescription.innerHTML = "This lava cake has extra chocolate and is guaranteed to make you want another one.";
                     menuItemPrice.innerHTML = "35.00 $";
                 }
             break;
