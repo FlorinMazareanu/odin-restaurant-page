@@ -3,9 +3,16 @@
 //and they all get minified in dist/main.js
 
 //importing the three sections:
+/*
 const homeModule = require("./home");
 const menuModule = require("./menu");
 const contactModule = require("./contact");
+*/
+
+import * as homeModule from '../src/home';
+import * as menuModule from '../src/menu';
+import * as contactModule from '../src/contact';
+
 
 console.log("index.js is running...");
 
