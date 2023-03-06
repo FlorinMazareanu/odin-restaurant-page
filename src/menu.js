@@ -30,8 +30,7 @@ function generateMenuElements() {
         menuItemDetails.appendChild(menuItemPrice);
         menuItemPrice.classList.add("menu-item-price");
 
-        switch (i) {
-            /*
+        switch (i) {     
             case 0:
                 {
                     menuItemTitle.innerHTML = "Cannoli";
@@ -39,7 +38,6 @@ function generateMenuElements() {
                     menuItemPrice.innerHTML = "12.5 $";
                 }
             break;
-            */
             case 1:
                 {
                     menuItemTitle.innerHTML = "Pancakes";
