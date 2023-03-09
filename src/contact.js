@@ -8,6 +8,6 @@ function generateContactElements() {
 
     const testElem = document.createElement("h3");
     contentElem.appendChild(testElem);
-    testElem.textContent = "Why would a personal project for a non-existant restaurant have contact details? :)";
+    testElem.textContent = "This site is for a personal project, not for a real restaurant";
 }
 export {generateContactElements};

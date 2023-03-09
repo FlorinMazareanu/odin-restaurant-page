@@ -1,5 +1,5 @@
 {
-  "name": "odin-restaurant-page",
+  "name": "restaurant-page",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FlorinMazareanu/odin-restaurant-page.git"
+    "url": "git+https://github.com/FlorinMazareanu/restaurant-page.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/FlorinMazareanu/odin-restaurant-page/issues"
+    "url": "https://github.com/FlorinMazareanu/restaurant-page/issues"
   },
-  "homepage": "https://github.com/FlorinMazareanu/odin-restaurant-page#readme",
+  "homepage": "https://github.com/FlorinMazareanu/restaurant-page",
   "devDependencies": {
     "css-loader": "^6.7.3",
     "nodemon": "^2.0.20",
